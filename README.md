@@ -1,5 +1,5 @@
 ## CS:GO Case Simulator <br/>
-Das Projekt CS:GO Case Simulator wurde von dem Projekt <a href="https://github.com/mberkdemir/godot-casesimulator">godot-casesimulator</A>, um das Projekt fortzusetzen.
+Das Projekt CS:GO Case Simulator wurde von dem Projekt <a href="https://github.com/mberkdemir/godot-casesimulator">geforked</A>, um das Projekt fortzusetzen.
 <br/>
 
 ## Geplante Features <br/>
