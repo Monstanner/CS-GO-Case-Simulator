@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/MenuClick.wav-6edc237a325bb8bd098ba906e9fcbc95.sample"
+
+[deps]
+
+source_file="res://Sounds/MenuClick.wav"
+dest_files=[ "res://.import/MenuClick.wav-6edc237a325bb8bd098ba906e9fcbc95.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
