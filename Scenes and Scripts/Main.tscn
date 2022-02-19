@@ -1,0 +1,213 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scenes and Scripts/Case.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Sprites/sari.png" type="Texture" id=2]
+[ext_resource path="res://Sounds/Spinning.wav" type="AudioStream" id=3]
+[ext_resource path="res://Scenes and Scripts/Main.gd" type="Script" id=4]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 90.0
+margin_bottom = 90.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CaseList" type="GridContainer" parent="."]
+anchor_top = 0.15
+anchor_right = 1.0
+anchor_bottom = 0.85
+margin_top = -110.1
+margin_bottom = 110.1
+columns = 4
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Case" parent="CaseList" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 248.0
+margin_bottom = 208.0
+
+[node name="Spinning" type="AudioStreamPlayer" parent="CaseList/Case"]
+stream = ExtResource( 3 )
+
+[node name="Case2" parent="CaseList" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 252.0
+margin_right = 500.0
+margin_bottom = 208.0
+
+[node name="Spinning" type="AudioStreamPlayer" parent="CaseList/Case2"]
+stream = ExtResource( 3 )
+
+[node name="Case3" parent="CaseList" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 504.0
+margin_right = 752.0
+margin_bottom = 208.0
+
+[node name="Spinning" type="AudioStreamPlayer" parent="CaseList/Case3"]
+stream = ExtResource( 3 )
+
+[node name="Case4" parent="CaseList" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 756.0
+margin_right = 1004.0
+margin_bottom = 208.0
+
+[node name="Spinning" type="AudioStreamPlayer" parent="CaseList/Case4"]
+stream = ExtResource( 3 )
+
+[node name="Case5" parent="CaseList" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 212.0
+margin_right = 248.0
+margin_bottom = 420.0
+
+[node name="Spinning" type="AudioStreamPlayer" parent="CaseList/Case5"]
+stream = ExtResource( 3 )
+
+[node name="Case6" parent="CaseList" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 252.0
+margin_top = 212.0
+margin_right = 500.0
+margin_bottom = 420.0
+
+[node name="Spinning" type="AudioStreamPlayer" parent="CaseList/Case6"]
+stream = ExtResource( 3 )
+
+[node name="Case7" parent="CaseList" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 504.0
+margin_top = 212.0
+margin_right = 752.0
+margin_bottom = 420.0
+
+[node name="Spinning" type="AudioStreamPlayer" parent="CaseList/Case7"]
+stream = ExtResource( 3 )
+
+[node name="Case8" parent="CaseList" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 756.0
+margin_top = 212.0
+margin_right = 1004.0
+margin_bottom = 420.0
+
+[node name="Spinning" type="AudioStreamPlayer" parent="CaseList/Case8"]
+stream = ExtResource( 3 )
+
+[node name="EarnedList" type="ScrollContainer" parent="."]
+visible = false
+margin_left = 116.5
+margin_top = 47.0
+margin_right = 1482.5
+margin_bottom = 781.0
+scroll_horizontal_enabled = false
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="EarnedList"]
+margin_right = 770.0
+margin_bottom = 1030.0
+custom_constants/vseparation = 10
+custom_constants/hseparation = 10
+columns = 3
+
+[node name="TextureRect" type="TextureRect" parent="EarnedList/GridContainer"]
+margin_right = 250.0
+margin_bottom = 250.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect2" type="TextureRect" parent="EarnedList/GridContainer"]
+margin_left = 260.0
+margin_right = 510.0
+margin_bottom = 250.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect3" type="TextureRect" parent="EarnedList/GridContainer"]
+margin_left = 520.0
+margin_right = 770.0
+margin_bottom = 250.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect4" type="TextureRect" parent="EarnedList/GridContainer"]
+margin_top = 260.0
+margin_right = 250.0
+margin_bottom = 510.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect5" type="TextureRect" parent="EarnedList/GridContainer"]
+margin_left = 260.0
+margin_top = 260.0
+margin_right = 510.0
+margin_bottom = 510.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect6" type="TextureRect" parent="EarnedList/GridContainer"]
+margin_left = 520.0
+margin_top = 260.0
+margin_right = 770.0
+margin_bottom = 510.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect7" type="TextureRect" parent="EarnedList/GridContainer"]
+margin_top = 520.0
+margin_right = 250.0
+margin_bottom = 770.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect8" type="TextureRect" parent="EarnedList/GridContainer"]
+margin_left = 260.0
+margin_top = 520.0
+margin_right = 510.0
+margin_bottom = 770.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect9" type="TextureRect" parent="EarnedList/GridContainer"]
+margin_left = 520.0
+margin_top = 520.0
+margin_right = 770.0
+margin_bottom = 770.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect10" type="TextureRect" parent="EarnedList/GridContainer"]
+margin_top = 780.0
+margin_right = 250.0
+margin_bottom = 1030.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect11" type="TextureRect" parent="EarnedList/GridContainer"]
+margin_left = 260.0
+margin_top = 780.0
+margin_right = 510.0
+margin_bottom = 1030.0
+texture = ExtResource( 2 )
+
+[node name="TextureRect12" type="TextureRect" parent="EarnedList/GridContainer"]
+margin_left = 520.0
+margin_top = 780.0
+margin_right = 770.0
+margin_bottom = 1030.0
+texture = ExtResource( 2 )
+
+[node name="ZurückbuttonMain" type="Button" parent="."]
+margin_top = 490.0
+margin_right = 55.0
+margin_bottom = 510.0
+text = "Zurück"
+
+[connection signal="pressed" from="ZurückbuttonMain" to="." method="_on_ZurckbuttonMain_pressed"]
