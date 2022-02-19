@@ -4,5 +4,5 @@ Das Projekt CS:GO Case Simulator wurde von dem Projekt <a href="https://github.c
 
 ## Geplante Features <br/>
 1) Soundeffekte werden hinzugefügt. (Spinning- und der Öffnungssound sind schon in ALPHA 1.0.0 enthalten)
-2) Das Speichern der Items, die man ehalten hat, und ein Inbentar wird hinzugefügt.
+2) Das Speichern der Items, die man ehalten hat, und ein Inventar wird hinzugefügt.
 3) Panorama UI. (Ansatzt ist schon in ALPHA 1.0.0 enthalten)
