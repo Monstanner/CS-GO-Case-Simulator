@@ -1,0 +1,69 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Menu/Menu.gd" type="Script" id=1]
+[ext_resource path="res://Menu/ALPHAVerNr.gd" type="Script" id=2]
+[ext_resource path="res://Menu/Hintergrund/Nuke/CSGO Case Simulator Hintergrund + UI.jpg" type="Texture" id=3]
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HintergrundNuke" type="TextureRect" parent="."]
+margin_right = 1366.0
+margin_bottom = 734.0
+texture = ExtResource( 3 )
+expand = true
+
+[node name="MenuAuswahl" type="VBoxContainer" parent="HintergrundNuke"]
+margin_left = -5.0
+margin_top = 251.0
+margin_right = 69.0
+margin_bottom = 343.0
+rect_clip_content = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Startbutton" type="Button" parent="HintergrundNuke/MenuAuswahl"]
+margin_right = 74.0
+margin_bottom = 20.0
+text = "Start"
+
+[node name="Optionenbutton" type="Button" parent="HintergrundNuke/MenuAuswahl"]
+margin_top = 24.0
+margin_right = 74.0
+margin_bottom = 44.0
+text = "Optionen"
+
+[node name="Ueberbutton" type="Button" parent="HintergrundNuke/MenuAuswahl"]
+margin_top = 48.0
+margin_right = 74.0
+margin_bottom = 68.0
+text = "Über"
+
+[node name="Verlassenbutton" type="Button" parent="HintergrundNuke/MenuAuswahl"]
+margin_top = 72.0
+margin_right = 74.0
+margin_bottom = 92.0
+text = "Verlassen"
+
+[node name="ALPHAVerNr" type="RichTextLabel" parent="HintergrundNuke"]
+margin_left = 941.0
+margin_top = 582.0
+margin_right = 1024.0
+margin_bottom = 600.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="mouse_entered" from="HintergrundNuke/MenuAuswahl/Startbutton" to="." method="_on_Startbutton_mouse_entered"]
+[connection signal="pressed" from="HintergrundNuke/MenuAuswahl/Startbutton" to="." method="_on_Startbutton_pressed"]
+[connection signal="script_changed" from="HintergrundNuke/MenuAuswahl/Startbutton" to="." method="_on_Startbutton_script_changed"]
+[connection signal="pressed" from="HintergrundNuke/MenuAuswahl/Optionenbutton" to="." method="_on_Optionenbutton_pressed"]
+[connection signal="pressed" from="HintergrundNuke/MenuAuswahl/Ueberbutton" to="." method="_on_Ueberbutton_pressed"]
+[connection signal="pressed" from="HintergrundNuke/MenuAuswahl/Verlassenbutton" to="." method="_on_Verlassenbutton_pressed"]

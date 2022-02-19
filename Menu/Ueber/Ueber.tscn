@@ -1,0 +1,60 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Menu/Ueber/UeberCSGOCaseSiulatorText.gd" type="Script" id=1]
+
+[node name="Ueber" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UeberCSGOCase SiulatorText" type="RichTextLabel" parent="."]
+margin_top = 25.0
+margin_right = 937.0
+margin_bottom = 347.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GodotEngingeButton" type="LinkButton" parent="."]
+margin_left = 239.0
+margin_top = 84.0
+margin_right = 542.0
+margin_bottom = 98.0
+text = "Godot Engine v3.4.2.stable.flathub [45eaa2daf]"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GithubGodotCaseSimulatorbutton" type="LinkButton" parent="."]
+margin_left = 613.0
+margin_top = 84.0
+margin_right = 744.0
+margin_bottom = 98.0
+text = "godot-casesimulator"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Githubmberkdemir" type="LinkButton" parent="."]
+margin_left = 775.0
+margin_top = 84.0
+margin_right = 854.0
+margin_bottom = 98.0
+text = "mberkdemir"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ZurückButtonUeber" type="Button" parent="."]
+margin_top = 580.0
+margin_right = 74.0
+margin_bottom = 600.0
+text = "Zurück"
+
+[connection signal="pressed" from="GodotEngingeButton" to="UeberCSGOCase SiulatorText" method="_on_GodotEngingeButton_pressed"]
+[connection signal="pressed" from="GithubGodotCaseSimulatorbutton" to="UeberCSGOCase SiulatorText" method="_on_GithubGodotCaseSimulatorbutton_pressed"]
+[connection signal="pressed" from="Githubmberkdemir" to="UeberCSGOCase SiulatorText" method="_on_Githubmberkdemir_pressed"]
+[connection signal="pressed" from="ZurückButtonUeber" to="UeberCSGOCase SiulatorText" method="_on_ZurckButtonUeber_pressed"]

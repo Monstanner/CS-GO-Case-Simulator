@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Menu/Optionen/Optionen.gd" type="Script" id=1]
+
+[node name="Optionen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioSlider" type="HSlider" parent="."]
+margin_right = 100.0
+margin_bottom = 16.0
+min_value = -90.0
+max_value = 0.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ZurückButtonOptionen" type="Button" parent="."]
+margin_top = 580.0
+margin_right = 74.0
+margin_bottom = 600.0
+text = "Zurück"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="value_changed" from="AudioSlider" to="." method="_on_AudioSlider_value_changed"]
+[connection signal="pressed" from="ZurückButtonOptionen" to="." method="_on_ZurckButtonOptionen_pressed"]
