@@ -4,8 +4,8 @@ Das Projekt CS:GO Case Simulator wurde von dem Projekt <a href="https://github.c
 
 ## Vorschau auf ALPHA 1.0.1 <br/>
 
-- [ ] Panorama UI Menü Sounds (Dashboardbutton mit Sound & Hintergrundmusik von Nuke)
-- [ ] Sounds (Case Soundsreihenfolge)
+- [ ] Panorama UI Menü Sounds (Dashboardbutton mit Sound & Hintergrundmusik von Nuke).
+- [ ] Sounds (Case Soundsreihenfolge).
 - [x] Falsche Sounds ersetzt durch die richtigen.
 - [x] Neues Icon
 
