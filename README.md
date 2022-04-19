@@ -6,6 +6,7 @@ Das Projekt CS:GO Case Simulator wurde von dem Projekt <a href="https://github.c
 
 - [ ] Panorama UI Menü Sounds (Dashboardbutton mit Sound & Hintergrundmusik von Nuke).
 - [ ] Sounds (Case Soundsreihenfolge).
+- [ ] Zurückbutton beim Case öffnen ausblenden und danach wieder einblenden (Fehhlebehebung).
 - [x] Falsche Sounds ersetzt durch die richtigen.
 - [x] Neues Icon.
 
